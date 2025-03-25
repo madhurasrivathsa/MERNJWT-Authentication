@@ -3,6 +3,7 @@ import jwt from 'jsonwebtoken';
 import userModel from '../models/userModel.js';
 import transporter from '../config/nodeMailer.js';
 export const register=async(req,res)=>{
+    console.log("it is hitting th back end ")
     const{name,email,password}=req.body;
     if(!name || !email || !password){
         return res.json({success:false,message:'Missing Details'})
