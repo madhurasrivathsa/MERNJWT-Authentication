@@ -8,7 +8,7 @@
 **/yarn.lock
 
 # Ignore environment variables
-**/.env
+# **/.env
 
 # Ignore build files
 **/dist/
